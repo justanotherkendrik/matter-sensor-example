@@ -1,0 +1,25 @@
+{
+    "format-version": 0,
+    "time": 1672852016,
+    "files": [
+        {
+            "load_address": 29184,
+            "version_MCUBOOT": "0.0.0+0",
+            "type": "application",
+            "board": "nrf52840dk_nrf52840",
+            "soc": "nRF52840_QIAA",
+            "size": 854103,
+            "file": "app_update.bin",
+            "modtime": 1672852016
+        }
+    ],
+    "name": "sensor",
+    "firmware": {
+        "zephyr": {
+            "revision": "c0689b16ff127d1b71a4cc20310d476e1807e26e"
+        },
+        "nrf": {
+            "revision": "7d7d0e9caa65d9ae7301df8f37fd443286b907f3"
+        }
+    }
+}

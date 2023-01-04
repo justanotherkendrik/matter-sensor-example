@@ -1,0 +1,538 @@
+I: 62205 [DL]BLE connection established (ConnId: 0x00)
+I: 62210 [DL]Current number of connections: 1/2
+I: 62215 [DL]CHIPoBLE advertising stopped
+D: 63946 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 63953 [BLE]local and remote recv window sizes = 5
+I: 63958 [BLE]selected BTP version 4
+I: 63961 [BLE]using BTP fragment sizes rx 244 / tx 244.
+D: 64046 [DL]ConnId: 0x00, New CCCD value: 0x0002
+D: 64050 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 6)
+D: 64058 [IN]BLE EndPoint 0x2000fb38 Connection Complete
+I: 64063 [DL]CHIPoBLE connection established (ConnId: 0x00, GATT MTU: 247)
+D: 64146 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 64196 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 64203 [EM]>>> [E:52204r M:107477544] (U) Msg RX from 0:5A64DAEF41C06E17 [0000] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)
+D: 64215 [EM]Handling via exchange: 52204r, Delegate: 0x20005854
+I: Event put resultsion ID 36366
+D: 64236 [SC]Found MRP parameters in the message
+D: 64240 [SC]RP parameters iram reM]<<< [E:52204r M:68046746] (U) Msg 0 [0000nnel:PBKDFParamResponse)
+I: 64258 [IN]Sending indication foId 00, len 140)
+D: 64271  PBKDFm resD~~~~~~~~~~~~~~~~[15D
+D: Curre346 [DL]Indication for CHIPoBLE TX characte(ConnId 0x00, result 0x096 [, Delegat: 0x264420 [C]Receed spae2p msg1
+ 0
+I: 66408 [EM]<<< [E:52204r M:68046747] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)
+I: 66419 [IN](U) Sending msg 68046747 to IP address 'BLE'
+D: 66424 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 132)
+D: 66431 [SC]Sent spake2p msg2
+E: 66434 [DL]Long dispatch time: 2038 ms, for event type 16388
+D: Current evenD: 66496 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 66504 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 66512 [EM]>>> [E:52204r M:107477546] (U) Msg RX from 0:5A64DAEF41C06E17 [0000] --- Type 0000:24 (SecureChannel:PASE_Pake3)
+D: 66523 [EM]Found matching exchange: 52204r, Delegate: 0x20005854
+D: 66529 [SC]Received spake2p msg3
+D: 66532 [SC]Sending status report. Protocol code 0, exchange 52204
+I: 66539 [EM]<<< [E:52204r M:68046748] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 66557 [IN](U) Sending msg 68046748 to IP address 'BLE'
+D: 66562 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 35)
+I: 66571 [SC]SecureSession[0x20003670]: Moving from state 'kEstablishing' --> 'kActive'
+D: 66578 [IN]SecureSession[0x20003670]: Activated - Type:1 LSID:27628
+D: 66585 [IN]New secure session activated for device <FFFFFFFB00000000, 0>, LSID:27628 PSID:36366!
+I: 66593 [SVR]Commissioning completed session establishment step
+I: 66600 [DIS]Updating services using commissioning mode 0
+D: 66605 [DL]Using Thread extended MAC for hostname.
+D: 66610 [DL]Using Thread extended MAC for hostname.
+I: 66615 [DIS]Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=0
+E: 66624 [DIS]Failed to advertise extended commissionable node: 3
+D: 66630 [DIS]Scheduling extended discovery timeout in 900s
+E: 66635 [DIS]Failed to finalize service update: 1c
+D: 66640 [DL]CHIPoBLE advertising set to off
+I: 66644 [SVR]Device completed Rendezvous process
+E: 66649 [DL]Long dispatch time: 145 ms, for event type 16388
+D: 66655 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 66698 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 66706 [EM]>>> [E:52205r M:50828103] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)
+D: 66716 [EM]Handling via exchange: 52205r, Delegate: 0x2000d504
+D: 66722 [IM]Received Read request
+D: 66728 [DMG]IM RH moving to [GeneratingReports]
+D: 66733 [DMG]Building Reports for ReadHandler with LastReportGeneration = 0 DirtyGeneration = 0
+D: 66741 [DMG]<RE:Run> Cluster 31, Attribute 3 is dirty
+D: 66746 [DMG]Reading attribute: Cluster=0x0000_0031 Endpoint=0 AttributeId=0x0000_0003 (expanded=1)
+D: 66755 [DMG]<RE:Run> Cluster 28, Attribute 4 is dirty
+D: 66760 [DMG]Reading attribute: Cluster=0x0000_0028 Endpoint=0 AttributeId=0x0000_0004 (expanded=0)
+D: 66777 [D [DMG]<RE:Run> Cluster 30, Attribute 3 is dirty
+D: 66796 [DMG]Reading attribute: Cluster=0x0000_0030 Endpoint=0 AttributeId=0x0000_0003 (expanded=0)
+D: 66805 [DMG]<RE:Run> Cluster 30, Attribute 2 is dirty
+D: 66810 [DMG]Reading attribute: Cluster=0x0000_0030 Endpoint=0 AttributeId=0x0000_0002 (expanded=0)
+D: 66819 [DMG]<RE:Run> Cluster 30, Attribute 1 is dirty
+D: 66824 [DMG]Reading attribute: Cluster=0x0000_0030 Endpoint=0 AttributeId=0x0000_0001 (expanded=0)
+D: 66833 [DMG]<RE:Run> Cluster 30, Attribute 0 is dirty
+D: 66838 [DMG]Reading attribute: Cluster=0x0000_0030 Endpoint=0 AttributeId=0x0000_0000 (expanded=0)
+D: 66847 [DMG]<RE:Run> Cluster 31, Attribute fffc is dirty
+D: 66852 [DMG]Reading attribute: Cluster=0x0000_0031 Endpoint=0 AttributeId=0x0000_FFFC (expanded=1)
+D: 66861 [DMG]<RE> Sending report (payload has 228 bytes)...
+I: 66868 [EM]<<< [E:52205r M:129127597] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+I: 66886 [IN](S) Sending msg 129127597 on secure session with LSID: 27628
+D: 66892 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 66900 [DMG]<RE> OnReportConfirm: NumReports = 0
+D: 66904 [DMG]<RE> ReportsInFlight = 0 with readHandler 0, RE has no more messages
+D: 66912 [DMG]IM RH moving to [AwaitingDestruction]
+D: 66916 [DMG]All ReadHandler-s are clean, clear GlobalDirtySet
+D: 66996 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 67003 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 21)
+D: 67097 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 67146 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 67154 [EM]>>> [E:52206r M:50828104] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 67165 [EM]Handling via exchange: 52206r, Delegate: 0x2000d504
+D: 67172 [DMG]Received command for Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0000
+I: 67179 [FS]GeneralCommissioning: Received ArmFailSafe (60s)
+D: 67185 [DMG]Endpoint 0, Cluster 0x0000_0030 update version to 1a131e70
+D: 67191 [DMG]Command handler moving to [ Preparing]
+D: 67203 [DMG]Command handler moving to [AddingComm]
+D: 67208 [DMG]Command handler moving to [AddedComma]
+D: 67213 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 67220 [EM]<<< [E:52206r M:129127598] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 67231 [IN](S) Sending msg 129127598 on secure session with LSID: 27628
+D: 67238 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 71)
+D: 67246 [DMG]Command handler moving to [CommandSen]
+D: 67251 [DMG]Command handler moving to [AwaitingDe]
+E: 67255 [DL]Long dispatch time: 109 ms, for event type 16388
+D: 67446 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 67496 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 67504 [EM]>>> [E:52207r M:50828105] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 67528 [DMG]Received command for Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0002
+D: 67554 [DMG]Endpoint 0, Cluster 0x0000_0030 update version to 1a131e71
+D: 67560 [DMG]Command handler moving to [ Preparing]
+D: 67565 [DMG]Command handler moving to [AddingComm]
+D: 67569 [DMG]Command handler moving to [AddedComma]
+D: 67574 asing reference count for CommandHandler, remaining 0
+I: 67581 [EM]<<< [E:52207r M:129127599] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 67592 [IN](S) Sending msg 129127599 on secure session with LSID: 27628
+D: 67599 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 71)
+D: 67606 [DMG]Command handler moving to [CommandSen]
+D: 67611 [DMG]Command handler moving to [AwaitingDe]
+E: 67616 [DL]Long dispatch time: 120 ms, for event type 16388
+D: 67666 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 67674 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 67682 [EM]>>> [E:52208r M:50828106] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type : 52208r, Delegate: 0x2000d504
+D: 67700 [DMG]Received command for Endpoint=0 Cluster=0x0000_003E Command=0x0000_0002
+I: 67707 [ZCL]OpCreds: Certificate Chain request received for PAI
+D: 67713 [DMG]Command handler moving to [ Preparing]
+D: 67718 [DMG]Command handler moving to [AddingComm]
+D: 67723 [DMG]Command handler moving to [AddedComma]
+D: 67735 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 67744 [EM]<<< [E:52208r M:129127600] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 67755 [IN](S) Sending msg 129127600 on secure session with LSID: 27628
+D: 67762 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 67770 [DMG]Command handler moving to [CommandSen]
+D: 67774 [DMG]Command handler moving to [AwaitingDe]
+E: 67779 [DL]Long dispatch time: 105 ms, for event type 16388
+D: 67846 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 67853 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 67936 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 67951 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 48)
+D: 68026 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 68034 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 68042 [EM]>>> [E:52209r M:50828107] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 68061 [EM]Handling via exchange: 52209r, Delegate: 0x2000d504
+D: 68067 [DMG]Received command for Endpoint=0 Cluster=0x0000_003E Command=0x0000_0002
+I: 68075 [ZCL]OpCreds: Certificate Chain request received for DAC
+D: 68080 [DMG]Command handler moving to [ Preparing]
+D: 68085 [DMG]Command handler moving to [AddingComm]
+D: 68090 [DMG]Command handler moving to [AddedComma]
+D: 68095 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 68104 [EM]<<< [E:52209r M:129127601] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 68115 [IN](S) Sending msg 129127601 on secure session with LSID: 27628
+D: 68122 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 68130 [DMG]Command handler moving to [CommandSen]
+D: 68134 [DMG]Command handler moving to [AwaitingDe]
+E: 68139 [DL]Long dispatch time: 105 ms, for event type 16388
+D: 68206 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 68213 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 68296 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 68303 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 78)
+D: 68386 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 68431 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 68439 [EM]>>> [E:52210r M:50828108] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 68450 [EM]Handling via exchange: 52210r, Delegate: 0x2000d504
+D: 68456 [DMG]Received command for Endpoint=0 Cluster=0x0000_003E Command=0x0000_0000
+I: 68464 [ZCL]OpCreds: Received an AttestationRequest command
+I: 68508 [ZCL]OpCreds: AttestationRequest successful.
+D: 68512 [DMG]Command handler moving to [ Preparing]
+D: 68517 [DMG]Command handler moving to [AddingComm]
+D: 68522 [DMG]Command handler moving to [AddedComma]
+D: 68527 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I:0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 68548 [IN](S) Sending msg 129127602 on secure session with LSID: 27628
+D: 68554 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 68562 [DMG]Command handler moving to [CommandSen]
+D: 68567 [DMG]Command handler moving to [AwaitingDe]
+E: 68572 [DL]Long dispatch time: 141 ms, for event type 16388
+D: 68611 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 68618 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 68701 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 68708 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 235)
+D: 68791 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 68836 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 68844 [EM]>>> [E:52211r M:50828109] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 68855 [EM]Handling via exchange: 52211r, Delegate: 0x2000d504
+D: 68861 [DMG]Received command for Endpoint=0 Cluster=0x0000_003E Command=0x0000_0004
+I: 68869 [ZCL]OpCreds: Received a CSRRequest command
+D: 68873 [ZCL]OpCreds: Finding fabric with fabricIndex 0x0
+I: 69078 [ZCL]OpCreds: AllocatePendingOperationalKey succeeded
+I: 69114 [ZCL]OpCreds: CSRRequest successful.
+D: 69125 [DMG]Command handler moving to [ Preparing]
+D: 69130 [DMG]Command handler moving to [AddingComm]
+D: 69135 [DMG]Command handler moving to [AddedComma]
+D: 69140 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 69148 [EM]<<< [E:52211r M:129127603] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 69159 [IN](S) Sending msg 129127603 on secure session with LSID: 27628
+D: 69166 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 244)
+D: 69173 [DMG]Command handler moving to [CommandSen]
+D: 69178 [DMG]Command handler moving to [AwaitingDe]
+E: 69183 [DL]Long dispatch time: 347 ms, for event type 16388
+D: 69241 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 69248 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 139)
+D: 69337 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 69381 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+D: 69467 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 69476 [EM]>>> [E:52212r M:50828110] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 69487 [EM]Handling via exchange: 52212r, Delegate: 0x2000d504
+D: 69493 [DMG]Received command for Endpoint=0 Cluster=0x0000_003E Command=0x0000_000B
+I: 69501 [ZCL]OpCreds: Received an AddTrustedRootCertificate command
+I: 69572 [ZCL]OpCreds: AddTrustedRootCertificate successful.
+D: 69577 [DMG]Command handler moving to [ Preparing]
+D: 69582 [DMG]Command handler moving to [AddingComm]
+D: 69586 [DMG]Command handler moving to [AddedComma]
+D: 69591 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 69598 [EM]<<< [E:52212r M:129127604] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 69609 [IN](S) Sending msg 129127604 on secure session with LSID: 27628
+D: 69616 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 68)
+D: 69624 [DMG]Command handler moving to [CommandSen]
+D: 69628 [DMG]Command handler moving to [AwaitingDe]
+E: 69633 [DL]Long dispatch time: 166 ms, for event type 16388
+D: 69691 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 69740 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+D: 69832 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+D: 69918 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 69928 [EM]>>> [E:52213r M:50828111] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 69939 [EM]Handling via exchange: 52213r, Delegate: 0x2000d504
+D: 69945 [DMG]Received command for Endpoint=0 Cluster=0x0000_003E Command=0x0000_0006
+I: 69953 [ZCL]OpCreds: Received an AddNOC command
+I: 69959 [FP]Validating NOC chain
+I: 70092 [FP]NOC chain validation successful
+I: 70096 [FP]Added new fabric at index: 0x1
+I: 70100 [FP]Assigned compressed fabric ID: 0x803DA129E34B9AE9, node ID: 0x0000000000000001
+I: 70108 [TS]Last Known Good Time: 2023-01-05T01:05:04
+I: 70113 [TS]New proposed [DMG]Ete version to 9b12f55c
+D: 70130 [DMG]Endpoint 0, Cluster 0x0000_003E update version to 9b12f55d
+D: 70160 [EVL]LogEvent event number: 0x0000000000000003 priority: 1, endpoint id:  0x0 cluster id: 0x0000_001F event id: 0x0 Sys timestamp: 0x0000000000011210
+I: 70182 [ZCL]OpCreds: ACL entry created for Fabric index 0x1 CASE Admin Subject 0x000000000001B669
+D: 70190 [DL]Using Thread extended MAC for hostname.
+I: 70195 [DIS]Advertise operational node 803DA129E34B9AE9-0000000000000001
+D: 70202 [DMG]Endpoint 0, Cluster 0x0000_003E update version to 9b12f55e
+D: 70208 [DMG]Endpoint 0, Cluster 0x0000_003E update version to 9b12f55f
+D: 70215 [DMG]Command handler moving to [ Preparing]
+D: 70220 [DMG]Command handler moving to [AddingComm]
+D: 70224 [DMG]Command handler moving to [AddedComma]
+I: 70229 [ZCL]OpCreds: successfully created fabric index 0x1 via AddNOC
+D: 70236 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 70243 [EM]<<< [E:52213r M:129127605] (S) Msg TX to 1:FFFFFFFB00000000 [9AE9] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 70254 [IN](S) Sending msg 129127605 on secure session with LSID: 27628
+D: 70260 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 71)
+D: 70268 [DMG]Command handler moving to [CommandSen]
+D: 70273 [DMG]Command handler moving to [AwaitingDe]
+E: 70278 [DL]Long dispatch time: 359 ms, for event type 16388
+D: 70321 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 70368 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 70376 [EM]>>> [E:52214r M:50828112] (S) Msg RX from 1:FFFFFFFB00000000 [9AE9] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 70387 [EM]Handling via exchange: 52214r, Delegate: 0x2000d504
+D: 70401 [DMG]Received command for Endpoint=0 Cluster=0x0000_0031 Command=0x0000_0003
+D: 70415 [DMG]Command handler moving to [ Preparing]
+D: 70420 [DMG]Command handler moving to [AddingComm]
+D: 70424 [DMG]Command handler moving to [AddedComma]
+D: 70429 [DMG]Endpoint 0, Cluster 0x0000_0030 update version to 1a131e72
+D: 70436 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 70443 [EM]<<< [E:52214r M:129127606] (S) Msg TX to 1:FFFFFFFB00000000 [9AE9] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 70454 [IN](S) Sending msg 129127606 on secure session with LSID: 27628
+D: 70461 [DL]Sending indication for CHIPoBLE TX characteristic (ConnId 00, len 71)
+D: 70468 [DMG]Command handler moving to [CommandSen]
+D: 70473 [DMG]Command handler moving to [AwaitingDe]
+E: 70478 [DL]Long dispatch time: 110 ms, for event type 16388
+D: 70546 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 70591 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 70599 [EM]>>> [E:52215r M:50828113] (S) Msg RX from 1:FFFFFFFB00000000 [9AE9] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 70617 [EM]Handling via exchange: 52215r, Delegate: 0x2000d504
+D: 70623 [DMG]Received command for Endpoint=0 Cluster=0x0000_0031 Command=0x0000_0006
+D: 70645 [DMG]Decreasing reference count for CommandHandler, remaining 1
+D: 70651 [DL]OpenThread State Changed (Flags: 0x1017c100)
+D: 70656 [DL]   Network Name: OpenThread-417e
+D: 70660 [DL]   PAN Id: 0x417E
+D: 70663 [DL]   Extended PAN Id: 0x59DF98EF8E4B2554
+D: 70668 [DL]   Channel: 15
+D: 70670 [DL]   Mesh Prefix: fd94:2a4b:9949:167a::/64
+D: 70676 [DL]OpenThread State Changed (Flags: 0x1100101d)
+D: 70682 [DL]   Device Role: DETACHED
+D: 70685 [DL]   Thread Unicast Addresses:
+D: 70689 [DL]        fd94:2a4b:9949:167a:1cb2:7692:2d78:5ca/64 valid
+D: 70695 [DL]        fe80::ec19:207e:811:7115/64 valid preferred
+~~~~~~~~~~~[~~~~~~[17DI: 72689 [DL]SRP Client was started, detecte9:167a:715e:3fee:64f9:f: 72698 [DL]Od (Flags: 0x200002a4)
+D: 72703 [DL]   Device Role: CHILD
+D: 727rtition IdDL]OpenThread State Cha 0x00000001bb:4895:d684D: 72884 [DL]   fd94:2a4b]        fd7692:2d78:5c[DL]Long dis 276 ms, for 32777
+D: 72994 [DMG]Command handler moving to [ Preparing]
+D: 73mand handler moving to [AddingComm]
+D: 73005 [Dandler movoint 0, C15r M607] (S)o 1:FFFFFFFB00000000 [9AE9] --- Type 0001:09 (IM:Invo) Sending mson with LSI73045 [DL]dication PoBLE Tcteristic (ConnId 00, len 70en]
+D: 73mand   itingD Thread extended MAC for hostname.
+I: 73067 [DIS]Advertise operational node 803DA129E34B9AE9-0000000000000001
+3074 [SVR]Opeing enled
+D: 73111 [DL]Indication for CHIPoBLE TX characteristic done (ConnId 0x00, result 0x00)
+D: 73122 [ds
+I: 73143 [DIS]Updating services using commissioning mode 0
+D: 73148 [DL]Using Thread extended MAC for hostname.
+I: 731530000001._matter._tcp
+D: 73168 [DL]Using Thread stname.
+I: 73174se commdorID=65521 produc840/15 cm=0
+I: 73183 [update 
+D: 73196 [DMG]Endpoint 0, Cluster 0x0000_002A u2I: 74603 [EM]>>> [E:52216r M:107477547] (U) Msg RX from 0:360ED5332200EFE4 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+D: 74614 [EM]Handling via exchange: 52216r, Delegate: 0x200042e0
+I: 74620 [IN]CASE Server received Sigma1 message. Starting handshake. EC 0x20004ff0
+I: 74627 [IN]CASE Server disabling CASE session setups
+I: 74632 [EM]<<< [E:52216r M:68046749 (Ack:107477547)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 74645 [IN](U) Sending msg 68046749 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:35432'
+D: 74656 [EM]Flushed pending ack for MessageCounter:107477547 on exchange 52216r
+I: 74663 [SC]Received Sigma1 msg
+D: 74666 [SC]Found MRP parameters in the message
+D: 74671 [SC]Peer assigned session key ID 36367
+I: 74678 [SC]CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000001
+D: 74899 [SC]Including MRP parameters
+I: 74904 [EM]<<< [E:52216r M:68046750 (Ack:107477547)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+I: 74916 [IN](U) Sending msg 68046750 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:35432'
+I: 74927 [SC]Sent Sigma2 msg
+I: 75064 [EM]>>> [E:52216r M:107477548 (Ack:68046750)] (U) Msg RX from 0:360ED5332200EFE4 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+D: 75076 [EM]Found matching exchange: 52216r, Delegate: 0x200042fc
+D: 75082 [EM]Rxd Ack; Removing MessageCounter:68046750 from Retrans Table on exchange 52216r
+I: 75091 [EM]<<< [E:52216r M:68046751 (Ack:107477548)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 75104 [IN](U) Sending msg 68046751 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:35432'
+D: 75114 [EM]Flushed pending ack for MessageCounter:107477548 on exchange 52216r
+I: 75122 [SC]Received Sigma3 msg
+E: 75129 [SC]The device does not support GetClock_RealTimeMS() API: 3.  Falling back to Last Known Good UTC Time
+D: 75486 [SC]Sending status report. Protocol code 0, exchange 52216
+I: 75492 [EM]<<< [E:52216r M:68046752 (Ack:107477548)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 75505 [IN](U) Sending msg 68046752 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:35432'
+I: 75516 [SC]SecureSession[0x20003728]: Moving from state 'kEstablishing' --> 'kActive'
+D: 75524 [IN]SecureSession[0x20003728]: Activated - Type:2 LSID:27629
+D: 75531 [IN]New secure session activated for device <000000000001B669, 1>, LSID:27629 PSID:36367!
+I: 75540 [IN]CASE Session established to peer: <000000000001B669, 1>
+I: 75546 [IN]CASE Server enabling CASE session setups
+D: 75551 [IN]SecureSession[0x200037e0]: Allocated Type:2 LSID:27630
+D: 75558 [SC]Allocated SecureSession (0x200037e0) - waiting for Sigma1 msg
+D: 75631 [DL]Write request received for CHIPoBLE RX characteristic (ConnId 0x00)
+I: 75755 [EM]>>> [E:52217r M:5096672] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 75768 [EM]Handling via exchange: 52217r, Delegate: 0x2000d504
+D: 75774 [DMG]Received command for Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0004
+I: 75781 [FS]GeneralCommissioning: Received CommissioningComplete
+I: 75891 [FP]Metadata for Fabric 0x1 persisted to storage.
+I: 76116 [TS]Committing Last Known Good Time to storage: 2023-01-05T01:05:04
+I: 76199 [ZCL]OpCreds: Fabric index 0x1 was committed to storage. Compressed Fabric Id 0x803DA129E34B9AE9, FabricId 0000000000000001, NodeId 0000000000000001, VendorId 0xFFF1
+I: 76242 [FS]GeneralCommissioning: Successfully commited pending fabric data
+I: 76249 [FS]Fail-safe cleanly disarmed
+D: 76253 [DMG]Endpoint 0, Cluster 0x0000_0030 update version to 1a131e74
+D: 76260 [DMG]Command handler moving to [ Preparing]
+D: 76264 [DMG]Command handler moving to [AddingComm]
+D: 76269 [DMG]Command handler moving to [AddedComma]
+D: 76274 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 76281 [EM]<<< [E:52217r M:130316526 (Ack:5096672)] (S) Msg TX to 1:000000000001B669 [9AE9] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 76293 [IN](S) Sending msg 130316526 on secure session with LSID: 27629
+D: 76301 [DMG]Command handler moving to [CommandSen]
+D: 76306 [DMG]Command handler moving to [AwaitingDe]
+I: 76311 [SWU]Device commissioned, schedule a default provider query
+I: 76317 [SVR]Commissioning completed successfully
+I: 76322 [DIS]Updating services using commissioning mode 0
+D: 76329 [DL]Using Thread extended MAC for hostname.
+I: 76334 [DIS]Advertise operational node 803DA129E34B9AE9-0000000000000001
+D: 76341 [DL]Using Thread extended MAC for hostname.
+I: 76347 [DIS]Advertise commission parameter vendorID=65521 productID=32768 discriminator=3840/15 cm=0
+D: 76359 [IN]Expiring all PASE sessions
+D: 76363 [IN]SecureSession[0x20003670]: MarkForEviction Ty 76369 [SC]SecureSession[0x20003670]: Moving from state 'kActive' --> 'kPendingEviction'
+D: 76377 [IN]SecureSession[0x20003670]: Released - Type:1 LSID:27628
+D: 76383 [IN]Clearing BLE pending packets.
+I: 76387 [BLE]Releasing end point's BLE connection back to application.
+I: 76393 [DL]Closing BLE GATT connection (ConnId 00)
+D: 76399 [ZCL]Commissioning complete, notify platform driver to persist network credentials.
+E: 76441 [DL]Long dispatch time: 130 ms, for event type 32781
+D: 76446 [DL]ConnId: 0x00, New CCCD value: 0x0000
+E: 76451 [BLE]no endpoint for unsub recvd
+D: 76455 [EM]Retransmitting MessageCounter:68046752 on exchange 52216r Send Cnt 1
+I: 76462 [IN](U) Sending msg 68046752 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:35432'
+I: 76473 [EM]>>> [E:52216r M:107477549 (Ack:68046752)] (U) Msg RX from 0:360ED5332200EFE4 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+D: 76486 [EM]Found matching exchange: 52216r, Delegate: (nil)
+D: 76492 [EM]Rxd Ack; Removing MessageCounter:68046752 from Retrans Table on exchange 52216r
+D: 76501 [IN]Received a duplicate message with MessageCounter:5096672 on exchange 52217r
+I: 76511 [EM]>>> [E:52217r M:5096672] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 76523 [EM]Found matching exchange: 52217r, Delegate: (nil)
+D: 76528 [EM]Forcing tx of solitary ack for duplicate MessageCounter:5096672 on exchange 52217r
+I: 76538 [EM]<<< [E:52217r M:130316527 (Ack:5096672)] (S) Msg TX to 1:000000000001B669 [9AE9] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 76550 [IN](S) Sending msg 130316527 on secure session with LSID: 27629
+I: 76557 [DL]BLE GAP connection terminated (reason 0x16)
+I: 76563 [DL]Current number of connections: 0/2
+D: 76568 [IN]Received a duplicate message with MessageCounter:5096672 on exchange 52217r
+I: 76576 [EM]>>> [E:52217r M:5096672] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 76589 [EM]Found matching exchange: 52217r, Delegate: (nil)
+D: 76595 [EM]Forcing tx of solitary ack for duplicate MessageCounter:5096672 on exchange 52217r
+I: 76604 [EM]<<< [E:52217r M:130316528 (Ack:5096672)] (S) Msg TX to 1:000000000001B669 [9AE9] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 76617 [IN](S) Sending msg 130316528 on secure session with LSID: 27629
+I: 76625 [EM]>>> [E:52217r M:5096673 (Ack:130316526)] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0000:10 (SecureChannel:StandaloneAck)
+D: 76638 [EM]Found matching exchange: 52217r, Delegate: (nil)
+D: 76644 [EM]Rxd Ack; Removing MessageCounter:130316526 from Retrans Table on exchange 52217r
+~~~~~~~~~~~~~~~~~~[17D[2D~~~~~~~~~[19D~~~~~~~~~[21D[2D~~~~~~~~~~~~~~~~E: 106317 [SWU]No suitable OTA Provider candidate found
+I: 106322 [SWU]No provider available
+~~~~~~~~~~~~~~~~~~~~~~~~[23D[2D~~~[25D~~~~~~~~~~~~~~~~~~~~~~~~~~[25D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~[27D~~~~~~~~~~~~~~~~~~~~~~~~~~~~[27D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[33D[2D~~~~~~~~~~~~~~~~~~~~~~~~[35D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[45D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[47DI: 210016 [EM]>>> [E:35824r M:23453654] (U) Msg RX from 0:B7A9B0155C49CDF5 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+D: 210027 [EM]Handling via exchange: 35824r, Delegate: 0x200042e0
+I: 210033 [IN]CASE Server received Sigma1 message. Starting handshake. EC 0x20004ff0
+I: 210041 [IN]CASE Server disabling CASE session setups
+I: 210046 [EM]<<< [E:35824r M:68046753 (Ack:23453654)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 210059 [IN](U) Sending msg 68046753 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:45986'
+D: 210069 [EM]Flushed pending ack for MessageCounter:23453654 on exchange 35824r
+I: 210076 [SC]Received Sigma1 msg
+D: 210079 [SC]Found MRP parameters in the message
+D: 210084 [SC]Peer assigned session key ID 45826
+I: 210092 [SC]CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000001
+D: 210313 [SC]Including MRP parameters
+I: 210317 [EM]<<< [E:35824r M:68046754 (Ack:23453654)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+I: 210329 [IN](U) Sending msg 68046754 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:45986'
+I: 210340 [SC]Sent Sigma2 msg
+I: 210462 [EM]>>> [E:35824r M:23453655 (Ack:68046754)] (U) Msg RX from 0:B7A9B0155C49CDF5 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+D: 210474 [EM]Found matching exchange: 35824r, Delegate: 0x200042fc
+D: 210480 [EM]Rxd Ack; Removing MessageCounter:68046754 from Retrans Table on exchange 35824r
+I: 210489 [EM]<<< [E:35824r M:68046755 (Ack:23453655)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 210501 [IN](U) Sending msg 68046755 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:45986'
+D: 210512 [EM]Flushed pending ack for MessageCounter:23453655 on exchange 35824r
+I: 210519 [SC]Received Sigma3 msg
+E: 210526 [SC]The device does not support GetClock_RealTimeMS() API: 3.  Falling back to Last Known Good UTC Time
+D: 210810 [SC]Sending status report. Protocol code 0, exchange 35824
+I: 210817 [EM]<<< [E:35824r M:68046756 (Ack:23453655)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 210829 [IN](U) Sending msg 68046756 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:45986'
+I: 210840 [SC]SecureSession[0x200037e0]: Moving from state 'kEstablishing' --> 'kActive'
+D: 210848 [IN]SecureSession[0x200037e0]: Activated - Type:2 LSID:27630
+D: 210855 [IN]New secure session activated for device <000000000001B669, 1>, LSID:27630 PSID:45826!
+I: 210864 [IN]CASE Session established to peer: <000000000001B669, 1>
+I: 210870 [IN]CASE Server enabling CASE session setups
+D: 210875 [IN]SecureSession[0x20003670]: Allocated Type:2 LSID:27631
+D: 210882 [SC]Allocated SecureSession (0x20003670) - waiting for Sigma1 msg
+I: 210896 [EM]>>> [E:35825r M:80756641] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0001:08 (IM:InvokeCommandRequest)
+D: 210908 [EM]Handling via exchange: 35825r, Delegate: 0x2000d504
+D: 210915 [DMG]Received command for Endpoint=1 Cluster=0x0000_0006 Command=0x0000_0001
+I: 210923 [ZCL]On/Off set value: 1 1
+I: 210926 [ZCL]Toggle on/off from 0 to 1
+D: 210930 [DMG]Endpoint 1, Cluster 0x0000_0006 update version to e38d2c11
+D: 210936 [DMG]Command handler moving to [ Preparing]
+D: 210941 [DMG]Command handler moving to [AddingComm]
+D: 210946 [DMG]Command handler moving to [AddedComma]
+D: 210951 [DMG]Decreasing reference count for CommandHandler, remaining 0
+I: 210958 [EM]<<< [E:35825r M:236066413 (Ack:80756641)] (S) Msg TX to 1:000000000001B669 [9AE9] --- Type 0001:09 (IM:InvokeCommandResponse)
+I: 210970 [IN](S) Sending msg 236066413 on secure session with LSID: 27630
+D: 210978 [DMG]Command handler moving to [CommandSen]
+D: 210983 [DMG]Command handler moving to [AwaitingDe]
+I: 210989 [EM]>>> [E:35824r M:23453656 (Ack:68046756)] (U) Msg RX from 0:B7A9B0155C49CDF5 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+D: 211001 [EM]Found matching exchange: 35824r, Delegate: (nil)
+D: 211007 [EM]Rxd Ack; Removing MessageCounter:68046756 from Retrans Table on exchange 35824r
+I: 211025 [EM]>>> [E:35825r M:80756642 (Ack:236066413)] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0000:10 (SecureChannel:StandaloneAck)
+D: 211037 [EM]Found matching exchange: 35825r, Delegate: (nil)
+D: 211043 [EM]Rxd Ack; Removing MessageCounter:236066413 from Retrans Table on exchange 35825r
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[47D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[49D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[49D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[51D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~51D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~I: r M:164812137] (U) Msg RX from 0:90B6AA8011880E24 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+D: 232212 [EM]Handling via exchange: 65009r, Delegate: 0x200042e0
+I: 232218 [IN]CASE Server received Sigma1 message. Starting handshake. EC 0x20004ff0
+I: 232225 [IN]CASE Server disabling CASE session setups
+I: 232231 [EM]<<< [E:65009r M:000000 [000e 0000:10 (Sek)
+I: 2322U) Sendo IP aress 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:54012'
+D: 232253 [EM]Flus MesageCountern exchange  232261 [SCigma1 msg
+[SC]Found MRP parameters in the messagCned session key ID 1598I: 232277 [SCeon ID: fabrN00000000000D: 232497 [S[reChannel:CASE_Sigma2)
+I: 22514 [IN](U) Sending msg 68046758 to DP:[fd58:ef8e:2554:788f:683d:92d:9444]:54012'
+524 [SC]Sent Sigma2 msg
+I: 232647 [EM]>>> [E:65009r M:164812138 (Ack:68046758)] (U) Msg RX from 0:90B6AA8011880E24 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+D: 232660 [EM]Found matching exchange: 65009r, Delegate: 0x200042fc
+D: 232666 [EM]Rxd Ack; Removing MessageCounter:68046758 from Retrans Table on exchange 65009r
+I: 232675 [EM]<<< [E:65009r M:68046759 (Ack:164812138)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 232687 [IN](U) Sending msg 68046759 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:54012'
+D: 232697 [EM]Flushed pending ack for MessageCounter:164812138 on exchange 65009r
+I: 232705 [SC]Received Sigma3 msg
+E: 232712 [SC]The device does not support GetClock_RealTimeMS() API: 3.  Falling back to Last Known Good UTC Time
+D: 232987 [SC]Sending status report. Protocol code 0, exchange 65009
+I: 232994 [EM]<<< [E:65009r M:68046760 (Ack:164812138)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 233006 [IN](U) Sending msg 68046760 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:54012'
+I: 233018 [SC]SecureSession[0x20003670]: Moving from state 'kEstablishing' --> 'kActive'
+D: 233026 [IN]SecureSession[0x20003670]: Activated - Type:2 LSID:27631
+D: 233032 [IN]New secure session activated for device <000000000001B669, 1>, LSID:27631 PSID:15984!
+I: 233041 [IN]CASE Session established to peer: <000000000001B669, 1>
+I: 233047 [IN]CASE Server enabling CASE session setups
+D: 233053 [IN]SecureSession[0x20003898]: Allocated Type:2 LSID:27632
+D: 233059 [SC]Allocated SecureSession (0x20003898) - waiting for Sigma1 msg
+I: 233091 [EM]>>> [E:65010r M:191809915] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0001:02 (IM:ReadRequest)
+D: 233103 [EM]Handling via exchange: 65010r, Delegate: 0x2000d504
+D: 233109 [IM]Received Read request
+D: 233113 [DMG]IM RH moving to [GeneratingReports]
+D: 233117 [DMG]Building Reports for ReadHandler with LastReportGeneration = 0 DirtyGeneration = 0
+D: 233126 [DMG]<RE:Run> Cluster 402, Attribute 0 is dirty
+D: 233131 [DMG]Reading attribute: Cluster=0x0000_0402 Endpoint=1 AttributeId=0x0000_0000 (expanded=0)
+D: 233140 [DMG]<RE> Sending report (payload has 37 bytes)...
+I: 233146 [EM]<<< [E:65010r M:101818775 (Ack:191809915)] (S) Msg TX to 1:000000000001B669 [9AE9] --- Type 0001:05 (IM:ReportData)
+I: 233158 [IN](S) Sending msg 101818775 on secure session with LSID: 27631
+D: 233165 [DMG]<RE> OnReportConfirm: NumReports = 0
+D: 233170 [DMG]<RE> ReportsInFlight = 0 with readHandler 0, RE has no more messages
+D: 233178 [DMG]IM RH moving to [AwaitingDestruction]
+D: 233183 [DMG]All ReadHandler-s are clean, clear GlobalDirtySet
+I: 233189 [EM]>>> [E:65009r M:164812139 (Ack:68046760)] (U) Msg RX from 0:90B6AA8011880E24 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+D: 233203 [EM]Found matching exchange: 65009r, Delegate: (nil)
+D: 233209 [EM]Rxd Ack; Removing MessageCounter:68046760 from Retrans Table on exchange 65009r
+I: 233218 [EM]>>> [E:65010r M:191809916 (Ack:101818775)] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0000:10 (SecureChannel:StandaloneAck)
+D: 233231 [EM]Found matching exchange: 65010r, Delegate: (nil)
+D: 233237 [EM]Rxd Ack; Removing MessageCounter:101818775 from Retrans Table on exchange 65010r
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[53D[~~~~~~~~~~~~~~~~~~[55D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[57D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[59D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[59D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[61D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[61D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[63D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[67DI: 293073 [EM]>>> [E:51664r M:47589619] (U) Msg RX from 0:161F008417CD4949 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+D: 293084 [EM]Handling via exchange: 51664r, Delegate: 0x200042e0
+I: 293090 [IN]CASE Server received Sigma1 message. Starting disabling CASE session setups
+I: 293103 [EM]<<< [E:51664r M:68046761 (Ack:47589619)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 293115 [IN](U) Sending msg 68046761 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:34009'
+D: 293126 [EM]Flushed pending ack for MessageCounter:47589619 on exchange 51664r
+I: 293133 [SC]Received Sigma1 msg
+D: 293136 [SC]Found MRP parameters in the message
+D: 293141 [SC]Peer assigned session key ID 43507
+I: 293149 [SC]CASE matched destination ID: fabricIndex 1, NodeID 0x0000000000000001
+D: 293368 [SC]Including MRP parameters
+I: 293372 [EM]<<< [E:51664r M:68046762 (Ack:47589619)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+I: 293385 [IN](U) Sending msg 68046762 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:34009'
+I: 293396 [SC]Sent Sigma2 msg
+I: 293523 [EM]>>> [E:51664r M:47589620 (Ack:68046762)] (U) Msg RX from 0:161F008417CD4949 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+D: 293536 [EM]Found matching exchange: 51664r, Delegate: 0x200042fc
+D: 293542 [EM]Rxd Ack; Removing MessageCounter:68046762 from Retrans Table on exchange 51664r
+I: 293550 [EM]<<< [E:51664r M:68046763 (Ack:47589620)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+I: 93563 [IN](U) Sending msg 68046763 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:34009'
+D: 293573 [EM]Flushed pending ack for MessageCounter:47589620 on exchange 51664r
+I: 293581 [SC]Received Sigma3 msg
+E: 293588 [SC]The device does not support GetClock_RealTimeMS() API: 3.  Falling back to Last Known Good UTC Time
+D: 293865 [SC]Sending status report. Protocol code 0, exchange 51664
+I: 293871 [EM]<<< [E:51664r M:68046764 (Ack:47589620)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+I: 293884 [IN](U) Sending msg 68046764 to IP address 'UDP:[fd59:df98:ef8e:2554:788f:683d:92d:9444]:34009'
+I: 293895 [SC]SecureSession[0x20003898]: Moving from state 'kEstablishing' --> 'kActive'
+D: 293903 [IN]SecureSession[0x20003898]: Activated - Type:2 LSID:27632
+D: 293910 [IN]New secure session activated for device <000000000001B669, 1>, LSID:27632 PSID:43507!
+I: 293919 [IN]CASE Session established to peer: <00000000I: 294041 [EM]>>> [E:51665r M:123628501] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0001:02 (IM:ReadRequest)
+D: 294053 [EM]Handling via exchange: 51665r, Delegate: 0x2000d504
+D: 294059 [IM]Received Read request
+D: 294063 [DMG]IM RH moving to [GeneratingReports]
+D: 294067 [DMG]Building Reports for ReadHandler with LastReportGeneration = 0 DirtyGeneration = 0
+D: 294076 [DMG]<RE:Run> Cluster 402, Attribute 0 is dirty
+D: 294081 [DMG]Reading attribute: Cluster=0x0000_0402 Endpoint=1 AttributeId=0x0000_0000 (expanded=0)
+D: 294090 [DMG]<RE> Sending report (payload has 37 bytes)...
+I: 294096 [EM]<<< [E:51665r M:231159614 (Ack:123628501)] (S) Msg TX to 1:000000000001B669 [9AE9] --- Type 0001:05 (IM:ReportData)
+I: 294108 [IN](S) Sending msg 231159614 on secure session with LSID: 27632
+D: 294116 [DMG]<RE> OnReportConfirm: NumReports = 0
+D: 294120 [DMG]<RE> ReportsInFlight = 0 with readHandler 0, RE has no more messages
+D: 294128 [DMG]IM RH moving to [AwaitingDestruction]
+D: 294133 [DMG]All ReadHandler-s are clean, clear GlobalDirtySet
+I: 294139 [EM]>>> [E:51664r M:47589621 (Ack:68046764)] (U) Msg RX from 0:161F008417CD4949 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+D: 294153 [EM]Found matching exchange: 51664r, Delegate: (nil)
+D: 294159 [EM]Rxd Ack; Removing MessageCounter:68046764 from Retrans Table on exchange 51664r
+I: 294168 [EM]>>> [E:51665r M:123628502 (Ack:231159614)] (S) Msg RX from 1:000000000001B669 [9AE9] --- Type 0000:10 (SecureChannel:StandaloneAck)
+D: 294181 [EM]Found matching exchange: 51665r, Delegate: (nil)
+D: 294187 [EM]Rxd Ack; Removing MessageCounter:231159614 from Retrans Table on exchange 51665r
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[67D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[69D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[69D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1A[9C~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[~~~~~~~~~~~~~~~~~~~~~~~A[5C[2D~~~~~~~~~~~~~~~~[1[3C~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[29D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[31D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[33D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[33D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[35D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[37D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[37D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[39D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[41D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[43D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[43D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[49D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[49D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[51D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[53D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~D[2D~~~~~~~~~~~~~~~~~~~~~~~1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[55D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[57D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[57D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[59D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[61D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[63D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[65D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[67D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[67D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[1A[69D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[7C[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[5C~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[3C[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[1C~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[1C[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[1D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[3D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[3D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[5D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[7D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[9D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[9D[2D~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[2A[~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

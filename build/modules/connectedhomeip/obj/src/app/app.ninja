@@ -1,0 +1,229 @@
+defines = -DNDEBUG -DCHIP_HAVE_CONFIG_H=1 -DCHIP_ADDRESS_RESOLVE_IMPL_INCLUDE_HEADER=\<lib/address_resolve/AddressResolve_DefaultImpl.h\>
+framework_dirs =
+include_dirs = -I../../../../../../../modules/lib/matter/src/include -I../../../../../../../modules/lib/matter/src -Igen/include -I../../../../../../../modules/lib/matter/zzz_generated/app-common -I../../../../../../../modules/lib/matter/third_party/nlassert/repo/include -I../../../../../../../modules/lib/matter/third_party/nlio/repo/include
+cflags = -Wconversion -mthumb -Os -g2 -fno-common -ffunction-sections -fdata-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Werror -Wstack-usage=8192 -Wextra -Wshadow -Wunreachable-code -Wvla -Wformat -Wformat-nonliteral -Wformat-security -Wno-deprecated-declarations -Wno-unknown-warning-option -Wno-maybe-uninitialized -Wno-missing-field-initializers -Wno-unused-parameter -Wno-unused -Wno-psabi -Wno-cast-function-type -fdiagnostics-color -fno-strict-aliasing -D_DEFAULT_SOURCE -D_SYS__PTHREADTYPES_H_ -isystem/home/kendrik/ncs/zephyr/include/zephyr/posix -DMBEDTLS_CONFIG_FILE=\<nrf-config.h\>
+cflags_cc = -std=gnu++14 -fno-rtti -Wnon-virtual-dtor -isystem/home/kendrik/ncs/nrf/drivers/mpsl/clock_control -isystem/home/kendrik/ncs/zephyr/include -isystem/home/kendrik/ncs/nrf/samples/matter/sensor/build/zephyr/include/generated -isystem/home/kendrik/ncs/zephyr/soc/arm/nordic_nrf/nrf52 -isystem/home/kendrik/ncs/zephyr/lib/libc/newlib/include -isystem/home/kendrik/ncs/zephyr/lib/util/fnmatch/. -isystem/home/kendrik/ncs/zephyr/soc/arm/nordic_nrf/common/. -isystem/home/kendrik/ncs/zephyr/subsys/bluetooth -isystem/home/kendrik/ncs/zephyr/subsys/net/lib/sockets/. -isystem/home/kendrik/ncs/zephyr/subsys/settings/include -isystem/home/kendrik/ncs/nrf/include -isystem/home/kendrik/ncs/nrf/lib/multithreading_lock/. -isystem/home/kendrik/ncs/nrf/subsys/bluetooth/controller/. -isystem/home/kendrik/ncs/zephyr/drivers/flash -isystem/home/kendrik/ncs/nrf/tests/include -isystem/home/kendrik/ncs/zephyr/modules/openthread/platform/. -isystem/home/kendrik/ncs/modules/hal/cmsis/CMSIS/Core/Include -isystem/home/kendrik/ncs/modules/hal/nordic/nrfx -isystem/home/kendrik/ncs/modules/hal/nordic/nrfx/drivers/include -isystem/home/kendrik/ncs/modules/hal/nordic/nrfx/mdk -isystem/home/kendrik/ncs/zephyr/modules/hal_nordic/nrfx/. -isystem/home/kendrik/ncs/modules/debug/segger/SEGGER -isystem/home/kendrik/ncs/modules/debug/segger/Config -isystem/home/kendrik/ncs/zephyr/modules/segger/. -isystem/home/kendrik/ncs/modules/crypto/tinycrypt/lib/include -isystem/home/kendrik/ncs/modules/lib/zcbor/include -isystem/home/kendrik/ncs/nrfxlib/mpsl/include -isystem/home/kendrik/ncs/nrfxlib/mpsl/include/protocol -isystem/home/kendrik/ncs/nrfxlib/openthread/include -isystem/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/nrfxlib/nrfxlib/nrf_security/src/include/generated -isystem/home/kendrik/ncs/nrfxlib/nrf_security/include/ -isystem/home/kendrik/ncs/nrfxlib/nrf_security/include/mbedtls -isystem/home/kendrik/ncs/nrfxlib/nrf_security/include/psa -isystem/home/kendrik/ncs/mbedtls/include -isystem/home/kendrik/ncs/mbedtls/include/mbedtls -isystem/home/kendrik/ncs/mbedtls/include/psa -isystem/home/kendrik/ncs/mbedtls/library -isystem/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/nrfxlib/nrfxlib/nrf_security/src/include/generated -isystem/home/kendrik/ncs/nrfxlib/nrf_security/../crypto/nrf_oberon/include/ -isystem/home/kendrik/ncs/nrfxlib/nrf_security/../crypto/nrf_oberon/include/mbedtls -isystem/home/kendrik/ncs/nrfxlib/nrf_security/../crypto/nrf_oberon/include/psa -isystem/home/kendrik/ncs/nrfxlib/crypto/nrf_cc310_platform/include -isystem/home/kendrik/ncs/nrfxlib/crypto/nrf_oberon/include/mbedtls -isystem/home/kendrik/ncs/nrfxlib/crypto/nrf_oberon/include -isystem/home/kendrik/ncs/nrfxlib/crypto/nrf_cc310_platform/include -isystem/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/nrfxlib/nrfxlib/nrf_security/src/include/generated -isystem/home/kendrik/ncs/nrfxlib/nrf_security/include/ -isystem/home/kendrik/ncs/nrfxlib/nrf_security/include/mbedtls -isystem/home/kendrik/ncs/nrfxlib/nrf_security/include/psa -isystem/home/kendrik/ncs/mbedtls/include -isystem/home/kendrik/ncs/mbedtls/include/mbedtls -isystem/home/kendrik/ncs/mbedtls/include/psa -isystem/home/kendrik/ncs/mbedtls/library -isystem/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/nrfxlib/nrfxlib/nrf_security/src/include/generated -isystem/home/kendrik/ncs/nrfxlib/nrf_security/../crypto/nrf_oberon/include/ -isystem/home/kendrik/ncs/nrfxlib/nrf_security/../crypto/nrf_oberon/include/mbedtls -isystem/home/kendrik/ncs/nrfxlib/nrf_security/../crypto/nrf_oberon/include/psa -isystem/home/kendrik/ncs/nrfxlib/crypto/nrf_cc310_platform/include -isystem/home/kendrik/ncs/nrfxlib/nrf_802154/driver/include -isystem/home/kendrik/ncs/nrfxlib/nrf_802154/sl/include -DKERNEL -D__ZEPHYR__=1 -D_FORTIFY_SOURCE=1 -D_ANSI_SOURCE -D__LINUX_ERRNO_EXTENSIONS__ -DUSE_PARTITION_MANAGER=1 -D__PROGRAM_START -DNRF52840_XXAA -DZCBOR_ASSERTS -fno-strict-aliasing -fcheck-new -std=c++14 -fno-exceptions -fno-rtti -imacros /home/kendrik/ncs/nrf/samples/matter/sensor/build/zephyr/include/generated/autoconf.h -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mfp16-format=ieee --sysroot=/home/kendrik/zephyr-sdk-0.15.1/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/kendrik/ncs/zephyr/include/zephyr/toolchain/zephyr_stdint.h --param=min-pagesize=0 -fmacro-prefix-map=/home/kendrik/ncs/nrf/samples/matter/sensor=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/kendrik/ncs/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/kendrik/ncs=WEST_TOPDIR -specs=nano.specs -std=gnu++14
+target_output_name = libCHIPDataModel
+
+build obj/src/app/app.inputdeps.stamp: stamp obj/src/app/gen_app_buildconfig.stamp obj/src/ble/gen_ble_buildconfig.stamp obj/src/crypto/gen_crypto_buildconfig.stamp obj/src/inet/gen_inet_buildconfig.stamp obj/src/lib/asn1/gen_asn1oid.stamp obj/src/lib/core/gen_chip_buildconfig.stamp obj/src/lib/support/gen_chip_version.stamp obj/src/platform/gen_platform_buildconfig.stamp obj/src/setup_payload/gen_additional_data_payload_buildconfig.stamp obj/src/system/gen_system_buildconfig.stamp
+build obj/src/app/libCHIPDataModel.AttributeAccessInterface.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/AttributeAccessInterface.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributeAccessInterface.cpp
+  source_name_part = AttributeAccessInterface
+build obj/src/app/libCHIPDataModel.AttributePathExpandIterator.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/AttributePathExpandIterator.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributePathExpandIterator.cpp
+  source_name_part = AttributePathExpandIterator
+build obj/src/app/libCHIPDataModel.BufferedReadCallback.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/BufferedReadCallback.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = BufferedReadCallback.cpp
+  source_name_part = BufferedReadCallback
+build obj/src/app/libCHIPDataModel.CASEClient.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/CASEClient.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = CASEClient.cpp
+  source_name_part = CASEClient
+build obj/src/app/libCHIPDataModel.CASESessionManager.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/CASESessionManager.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = CASESessionManager.cpp
+  source_name_part = CASESessionManager
+build obj/src/app/libCHIPDataModel.ChunkedWriteCallback.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/ChunkedWriteCallback.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ChunkedWriteCallback.cpp
+  source_name_part = ChunkedWriteCallback
+build obj/src/app/libCHIPDataModel.ClusterStateCache.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/ClusterStateCache.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ClusterStateCache.cpp
+  source_name_part = ClusterStateCache
+build obj/src/app/libCHIPDataModel.CommandHandler.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/CommandHandler.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = CommandHandler.cpp
+  source_name_part = CommandHandler
+build obj/src/app/libCHIPDataModel.CommandSender.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/CommandSender.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = CommandSender.cpp
+  source_name_part = CommandSender
+build obj/src/app/libCHIPDataModel.DefaultAttributePersistenceProvider.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/DefaultAttributePersistenceProvider.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = DefaultAttributePersistenceProvider.cpp
+  source_name_part = DefaultAttributePersistenceProvider
+build obj/src/app/libCHIPDataModel.DeferredAttributePersistenceProvider.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/DeferredAttributePersistenceProvider.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = DeferredAttributePersistenceProvider.cpp
+  source_name_part = DeferredAttributePersistenceProvider
+build obj/src/app/libCHIPDataModel.DeviceProxy.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/DeviceProxy.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = DeviceProxy.cpp
+  source_name_part = DeviceProxy
+build obj/src/app/libCHIPDataModel.EventManagement.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/EventManagement.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventManagement.cpp
+  source_name_part = EventManagement
+build obj/src/app/libCHIPDataModel.FailSafeContext.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/FailSafeContext.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = FailSafeContext.cpp
+  source_name_part = FailSafeContext
+build obj/src/app/libCHIPDataModel.InteractionModelEngine.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/InteractionModelEngine.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = InteractionModelEngine.cpp
+  source_name_part = InteractionModelEngine
+build obj/src/app/MessageDef/libCHIPDataModel.ArrayBuilder.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/ArrayBuilder.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ArrayBuilder.cpp
+  source_name_part = ArrayBuilder
+build obj/src/app/MessageDef/libCHIPDataModel.ArrayParser.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/ArrayParser.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ArrayParser.cpp
+  source_name_part = ArrayParser
+build obj/src/app/MessageDef/libCHIPDataModel.AttributeDataIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/AttributeDataIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributeDataIB.cpp
+  source_name_part = AttributeDataIB
+build obj/src/app/MessageDef/libCHIPDataModel.AttributeDataIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/AttributeDataIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributeDataIBs.cpp
+  source_name_part = AttributeDataIBs
+build obj/src/app/MessageDef/libCHIPDataModel.AttributePathIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/AttributePathIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributePathIB.cpp
+  source_name_part = AttributePathIB
+build obj/src/app/MessageDef/libCHIPDataModel.AttributePathIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/AttributePathIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributePathIBs.cpp
+  source_name_part = AttributePathIBs
+build obj/src/app/MessageDef/libCHIPDataModel.AttributeReportIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/AttributeReportIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributeReportIB.cpp
+  source_name_part = AttributeReportIB
+build obj/src/app/MessageDef/libCHIPDataModel.AttributeReportIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/AttributeReportIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributeReportIBs.cpp
+  source_name_part = AttributeReportIBs
+build obj/src/app/MessageDef/libCHIPDataModel.AttributeStatusIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/AttributeStatusIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributeStatusIB.cpp
+  source_name_part = AttributeStatusIB
+build obj/src/app/MessageDef/libCHIPDataModel.AttributeStatusIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/AttributeStatusIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = AttributeStatusIBs.cpp
+  source_name_part = AttributeStatusIBs
+build obj/src/app/MessageDef/libCHIPDataModel.Builder.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/Builder.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = Builder.cpp
+  source_name_part = Builder
+build obj/src/app/MessageDef/libCHIPDataModel.ClusterPathIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/ClusterPathIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ClusterPathIB.cpp
+  source_name_part = ClusterPathIB
+build obj/src/app/MessageDef/libCHIPDataModel.CommandDataIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/CommandDataIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = CommandDataIB.cpp
+  source_name_part = CommandDataIB
+build obj/src/app/MessageDef/libCHIPDataModel.CommandPathIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/CommandPathIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = CommandPathIB.cpp
+  source_name_part = CommandPathIB
+build obj/src/app/MessageDef/libCHIPDataModel.CommandStatusIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/CommandStatusIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = CommandStatusIB.cpp
+  source_name_part = CommandStatusIB
+build obj/src/app/MessageDef/libCHIPDataModel.DataVersionFilterIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/DataVersionFilterIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = DataVersionFilterIB.cpp
+  source_name_part = DataVersionFilterIB
+build obj/src/app/MessageDef/libCHIPDataModel.DataVersionFilterIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/DataVersionFilterIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = DataVersionFilterIBs.cpp
+  source_name_part = DataVersionFilterIBs
+build obj/src/app/MessageDef/libCHIPDataModel.EventDataIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/EventDataIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventDataIB.cpp
+  source_name_part = EventDataIB
+build obj/src/app/MessageDef/libCHIPDataModel.EventFilterIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/EventFilterIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventFilterIB.cpp
+  source_name_part = EventFilterIB
+build obj/src/app/MessageDef/libCHIPDataModel.EventFilterIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/EventFilterIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventFilterIBs.cpp
+  source_name_part = EventFilterIBs
+build obj/src/app/MessageDef/libCHIPDataModel.EventPathIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/EventPathIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventPathIB.cpp
+  source_name_part = EventPathIB
+build obj/src/app/MessageDef/libCHIPDataModel.EventPathIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/EventPathIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventPathIBs.cpp
+  source_name_part = EventPathIBs
+build obj/src/app/MessageDef/libCHIPDataModel.EventReportIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/EventReportIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventReportIB.cpp
+  source_name_part = EventReportIB
+build obj/src/app/MessageDef/libCHIPDataModel.EventReportIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/EventReportIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventReportIBs.cpp
+  source_name_part = EventReportIBs
+build obj/src/app/MessageDef/libCHIPDataModel.EventStatusIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/EventStatusIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = EventStatusIB.cpp
+  source_name_part = EventStatusIB
+build obj/src/app/MessageDef/libCHIPDataModel.InvokeRequestMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/InvokeRequestMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = InvokeRequestMessage.cpp
+  source_name_part = InvokeRequestMessage
+build obj/src/app/MessageDef/libCHIPDataModel.InvokeRequests.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/InvokeRequests.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = InvokeRequests.cpp
+  source_name_part = InvokeRequests
+build obj/src/app/MessageDef/libCHIPDataModel.InvokeResponseIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/InvokeResponseIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = InvokeResponseIB.cpp
+  source_name_part = InvokeResponseIB
+build obj/src/app/MessageDef/libCHIPDataModel.InvokeResponseIBs.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/InvokeResponseIBs.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = InvokeResponseIBs.cpp
+  source_name_part = InvokeResponseIBs
+build obj/src/app/MessageDef/libCHIPDataModel.InvokeResponseMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/InvokeResponseMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = InvokeResponseMessage.cpp
+  source_name_part = InvokeResponseMessage
+build obj/src/app/MessageDef/libCHIPDataModel.ListBuilder.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/ListBuilder.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ListBuilder.cpp
+  source_name_part = ListBuilder
+build obj/src/app/MessageDef/libCHIPDataModel.ListParser.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/ListParser.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ListParser.cpp
+  source_name_part = ListParser
+build obj/src/app/MessageDef/libCHIPDataModel.MessageBuilder.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/MessageBuilder.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = MessageBuilder.cpp
+  source_name_part = MessageBuilder
+build obj/src/app/MessageDef/libCHIPDataModel.MessageDefHelper.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/MessageDefHelper.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = MessageDefHelper.cpp
+  source_name_part = MessageDefHelper
+build obj/src/app/MessageDef/libCHIPDataModel.MessageParser.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/MessageParser.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = MessageParser.cpp
+  source_name_part = MessageParser
+build obj/src/app/MessageDef/libCHIPDataModel.Parser.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/Parser.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = Parser.cpp
+  source_name_part = Parser
+build obj/src/app/MessageDef/libCHIPDataModel.ReadRequestMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/ReadRequestMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ReadRequestMessage.cpp
+  source_name_part = ReadRequestMessage
+build obj/src/app/MessageDef/libCHIPDataModel.ReportDataMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/ReportDataMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ReportDataMessage.cpp
+  source_name_part = ReportDataMessage
+build obj/src/app/MessageDef/libCHIPDataModel.StatusIB.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/StatusIB.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = StatusIB.cpp
+  source_name_part = StatusIB
+build obj/src/app/MessageDef/libCHIPDataModel.StatusResponseMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/StatusResponseMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = StatusResponseMessage.cpp
+  source_name_part = StatusResponseMessage
+build obj/src/app/MessageDef/libCHIPDataModel.StructBuilder.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/StructBuilder.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = StructBuilder.cpp
+  source_name_part = StructBuilder
+build obj/src/app/MessageDef/libCHIPDataModel.StructParser.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/StructParser.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = StructParser.cpp
+  source_name_part = StructParser
+build obj/src/app/MessageDef/libCHIPDataModel.SubscribeRequestMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/SubscribeRequestMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = SubscribeRequestMessage.cpp
+  source_name_part = SubscribeRequestMessage
+build obj/src/app/MessageDef/libCHIPDataModel.SubscribeResponseMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/SubscribeResponseMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = SubscribeResponseMessage.cpp
+  source_name_part = SubscribeResponseMessage
+build obj/src/app/MessageDef/libCHIPDataModel.TimedRequestMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/TimedRequestMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = TimedRequestMessage.cpp
+  source_name_part = TimedRequestMessage
+build obj/src/app/MessageDef/libCHIPDataModel.WriteRequestMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/WriteRequestMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = WriteRequestMessage.cpp
+  source_name_part = WriteRequestMessage
+build obj/src/app/MessageDef/libCHIPDataModel.WriteResponseMessage.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/MessageDef/WriteResponseMessage.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = WriteResponseMessage.cpp
+  source_name_part = WriteResponseMessage
+build obj/src/app/libCHIPDataModel.OperationalSessionSetup.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/OperationalSessionSetup.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = OperationalSessionSetup.cpp
+  source_name_part = OperationalSessionSetup
+build obj/src/app/libCHIPDataModel.ReadClient.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/ReadClient.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ReadClient.cpp
+  source_name_part = ReadClient
+build obj/src/app/libCHIPDataModel.ReadHandler.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/ReadHandler.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = ReadHandler.cpp
+  source_name_part = ReadHandler
+build obj/src/app/libCHIPDataModel.RequiredPrivilege.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/RequiredPrivilege.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = RequiredPrivilege.cpp
+  source_name_part = RequiredPrivilege
+build obj/src/app/libCHIPDataModel.StatusResponse.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/StatusResponse.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = StatusResponse.cpp
+  source_name_part = StatusResponse
+build obj/src/app/libCHIPDataModel.TimedHandler.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/TimedHandler.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = TimedHandler.cpp
+  source_name_part = TimedHandler
+build obj/src/app/libCHIPDataModel.TimedRequest.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/TimedRequest.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = TimedRequest.cpp
+  source_name_part = TimedRequest
+build obj/src/app/libCHIPDataModel.WriteClient.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/WriteClient.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = WriteClient.cpp
+  source_name_part = WriteClient
+build obj/src/app/libCHIPDataModel.WriteHandler.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/WriteHandler.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = WriteHandler.cpp
+  source_name_part = WriteHandler
+build obj/src/app/reporting/libCHIPDataModel.Engine.cpp.o: cxx ../../../../../../../modules/lib/matter/src/app/reporting/Engine.cpp || obj/src/app/app.inputdeps.stamp
+  source_file_part = Engine.cpp
+  source_name_part = Engine
+
+build obj/src/app/lib/libCHIPDataModel.a: alink obj/src/app/libCHIPDataModel.AttributeAccessInterface.cpp.o obj/src/app/libCHIPDataModel.AttributePathExpandIterator.cpp.o obj/src/app/libCHIPDataModel.BufferedReadCallback.cpp.o obj/src/app/libCHIPDataModel.CASEClient.cpp.o obj/src/app/libCHIPDataModel.CASESessionManager.cpp.o obj/src/app/libCHIPDataModel.ChunkedWriteCallback.cpp.o obj/src/app/libCHIPDataModel.ClusterStateCache.cpp.o obj/src/app/libCHIPDataModel.CommandHandler.cpp.o obj/src/app/libCHIPDataModel.CommandSender.cpp.o obj/src/app/libCHIPDataModel.DefaultAttributePersistenceProvider.cpp.o obj/src/app/libCHIPDataModel.DeferredAttributePersistenceProvider.cpp.o obj/src/app/libCHIPDataModel.DeviceProxy.cpp.o obj/src/app/libCHIPDataModel.EventManagement.cpp.o obj/src/app/libCHIPDataModel.FailSafeContext.cpp.o obj/src/app/libCHIPDataModel.InteractionModelEngine.cpp.o obj/src/app/MessageDef/libCHIPDataModel.ArrayBuilder.cpp.o obj/src/app/MessageDef/libCHIPDataModel.ArrayParser.cpp.o obj/src/app/MessageDef/libCHIPDataModel.AttributeDataIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.AttributeDataIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.AttributePathIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.AttributePathIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.AttributeReportIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.AttributeReportIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.AttributeStatusIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.AttributeStatusIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.Builder.cpp.o obj/src/app/MessageDef/libCHIPDataModel.ClusterPathIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.CommandDataIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.CommandPathIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.CommandStatusIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.DataVersionFilterIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.DataVersionFilterIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.EventDataIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.EventFilterIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.EventFilterIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.EventPathIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.EventPathIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.EventReportIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.EventReportIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.EventStatusIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.InvokeRequestMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.InvokeRequests.cpp.o obj/src/app/MessageDef/libCHIPDataModel.InvokeResponseIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.InvokeResponseIBs.cpp.o obj/src/app/MessageDef/libCHIPDataModel.InvokeResponseMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.ListBuilder.cpp.o obj/src/app/MessageDef/libCHIPDataModel.ListParser.cpp.o obj/src/app/MessageDef/libCHIPDataModel.MessageBuilder.cpp.o obj/src/app/MessageDef/libCHIPDataModel.MessageDefHelper.cpp.o obj/src/app/MessageDef/libCHIPDataModel.MessageParser.cpp.o obj/src/app/MessageDef/libCHIPDataModel.Parser.cpp.o obj/src/app/MessageDef/libCHIPDataModel.ReadRequestMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.ReportDataMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.StatusIB.cpp.o obj/src/app/MessageDef/libCHIPDataModel.StatusResponseMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.StructBuilder.cpp.o obj/src/app/MessageDef/libCHIPDataModel.StructParser.cpp.o obj/src/app/MessageDef/libCHIPDataModel.SubscribeRequestMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.SubscribeResponseMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.TimedRequestMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.WriteRequestMessage.cpp.o obj/src/app/MessageDef/libCHIPDataModel.WriteResponseMessage.cpp.o obj/src/app/libCHIPDataModel.OperationalSessionSetup.cpp.o obj/src/app/libCHIPDataModel.ReadClient.cpp.o obj/src/app/libCHIPDataModel.ReadHandler.cpp.o obj/src/app/libCHIPDataModel.RequiredPrivilege.cpp.o obj/src/app/libCHIPDataModel.StatusResponse.cpp.o obj/src/app/libCHIPDataModel.TimedHandler.cpp.o obj/src/app/libCHIPDataModel.TimedRequest.cpp.o obj/src/app/libCHIPDataModel.WriteClient.cpp.o obj/src/app/libCHIPDataModel.WriteHandler.cpp.o obj/src/app/reporting/libCHIPDataModel.Engine.cpp.o || obj/src/app/app_config.stamp obj/src/access/lib/libaccess.a obj/src/lib/address_resolve/lib/address_resolve.a obj/src/lib/support/lib/libSupportLayer.a obj/src/messaging/lib/libMessagingLayer.a obj/src/protocols/secure_channel/lib/libSecureChannel.a obj/src/system/lib/libSystemLayer.a obj/third_party/nlio/nlio.stamp obj/src/app/app_buildconfig.stamp obj/src/lib/core/lib/libChipCore.a obj/src/lib/core/chip_config_header.stamp obj/src/lib/core/chip_buildconfig.stamp obj/src/ble/ble_config_header.stamp obj/src/ble/ble_buildconfig.stamp obj/src/platform/platform_buildconfig.stamp obj/src/system/system_config_header.stamp obj/src/system/system_buildconfig.stamp obj/src/ble/lib/libBleLayer.a obj/src/inet/lib/libInetLayer.a obj/src/inet/inet_config_header.stamp obj/src/inet/inet_buildconfig.stamp obj/src/lib/support/chip_version_header.stamp obj/src/lib/support/enforce_format.stamp obj/src/lib/support/logging_constants.stamp obj/src/platform/logging/headers.stamp obj/third_party/nlassert/nlassert.stamp obj/src/platform/lib/libDeviceLayer.a obj/src/setup_payload/additional_data_payload.stamp obj/src/crypto/lib/libChipCrypto.a obj/src/crypto/public_headers.stamp obj/src/crypto/crypto_buildconfig.stamp obj/src/lib/asn1/lib/libASN1.a obj/src/lib/asn1/asn1oid_header.stamp obj/src/crypto/cryptopal_mbedtls.stamp obj/src/setup_payload/additional_data_payload_buildconfig.stamp obj/src/app/common/lib/libClusterObjects.a obj/src/platform/nrfconnect/lib/nrfconnect.a obj/src/lib/dnssd/platform_header.stamp obj/src/lib/dnssd/lib/dnssd.a obj/src/messaging/messaging_mrp_config.stamp obj/src/transport/lib/libTransportLayer.a obj/src/credentials/lib/libCredentials.a obj/src/setup_payload/lib/libSetupPayload.a obj/src/transport/raw/lib/libRawTransport.a obj/src/trace/trace.stamp
+  arflags =
+  output_extension = .a
+  output_dir = obj/src/app/lib

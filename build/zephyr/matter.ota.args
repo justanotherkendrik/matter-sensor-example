@@ -1,0 +1,12 @@
+--vendor-id
+65521
+--product-id
+32768
+--version
+0
+--version-str
+prerelease
+--digest-algorithm
+sha256
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/zephyr/dfu_multi_image.bin
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/zephyr/matter.ota

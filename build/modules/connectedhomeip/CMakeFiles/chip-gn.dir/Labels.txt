@@ -1,0 +1,13 @@
+# Target labels
+ chip-gn
+# Source files and their labels
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/CMakeFiles/chip-gn
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/CMakeFiles/chip-gn.rule
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/CMakeFiles/chip-gn-complete.rule
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/src/chip-gn-stamp/chip-gn-build.rule
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/src/chip-gn-stamp/chip-gn-configure.rule
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/src/chip-gn-stamp/chip-gn-download.rule
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/src/chip-gn-stamp/chip-gn-install.rule
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/src/chip-gn-stamp/chip-gn-mkdir.rule
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/src/chip-gn-stamp/chip-gn-patch.rule
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/modules/connectedhomeip/src/chip-gn-stamp/chip-gn-update.rule

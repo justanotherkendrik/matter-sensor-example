@@ -1,0 +1,4 @@
+build
+mypy==0.910
+types-setuptools
+pylint==2.9.3

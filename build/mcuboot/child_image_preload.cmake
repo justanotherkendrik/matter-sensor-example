@@ -1,0 +1,10 @@
+# Generated file used for preloading a child image
+set(CMAKE_BUILD_TYPE "" CACHE INTERNAL "NCS child image controlled")
+set(CMAKE_VERBOSE_MAKEFILE "FALSE" CACHE INTERNAL "NCS child image controlled")
+set(BOARD_DIR "/home/kendrik/ncs/zephyr/boards/arm/nrf52840dk_nrf52840" CACHE INTERNAL "NCS child image controlled")
+set(ZEPHYR_TOOLCHAIN_VARIANT "zephyr" CACHE INTERNAL "NCS child image controlled")
+set(BOARD "nrf52840dk_nrf52840" CACHE INTERNAL "NCS child image controlled")
+set(CONF_FILE "/home/kendrik/ncs/nrf/samples/matter/sensor/child_image/mcuboot/prj.conf" CACHE INTERNAL "NCS child image controlled")
+set(DTC_OVERLAY_FILE "/home/kendrik/ncs/nrf/samples/matter/sensor/child_image/mcuboot/boards/nrf52840dk_nrf52840.overlay" CACHE INTERNAL "NCS child image controlled")
+set(KCONFIG_ROOT "/home/kendrik/ncs/modules/lib/matter/config/nrfconnect/chip-module/Kconfig.mcuboot.root" CACHE INTERNAL "NCS child image controlled")
+set(OVERLAY_CONFIG "/home/kendrik/ncs/nrf/subsys/partition_manager/ext_flash_mcuboot_secondary.conf;/home/kendrik/ncs/nrf/subsys/partition_manager/partition_manager_enabled.conf" CACHE INTERNAL "NCS child image controlled")

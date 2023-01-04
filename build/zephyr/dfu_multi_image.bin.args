@@ -1,0 +1,5 @@
+create
+--image
+0
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/zephyr/app_update.bin
+/home/kendrik/ncs/nrf/samples/matter/sensor/build/zephyr/dfu_multi_image.bin

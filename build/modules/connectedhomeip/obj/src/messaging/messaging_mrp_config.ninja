@@ -1,0 +1,7 @@
+defines = -DNDEBUG -DCHIP_HAVE_CONFIG_H=1
+framework_dirs =
+include_dirs = -I../../../../../../../modules/lib/matter/src/include -I../../../../../../../modules/lib/matter/src -Igen/include -I../../../../../../../modules/lib/matter/zzz_generated/app-common -I../../../../../../../modules/lib/matter/third_party/nlassert/repo/include -I../../../../../../../modules/lib/matter/third_party/nlio/repo/include
+target_output_name = messaging_mrp_config
+
+
+build obj/src/messaging/messaging_mrp_config.stamp: stamp || obj/src/system/lib/libSystemLayer.a obj/src/lib/support/lib/libSupportLayer.a obj/src/lib/support/chip_version_header.stamp obj/src/lib/support/enforce_format.stamp obj/src/lib/support/logging_constants.stamp obj/src/lib/core/chip_config_header.stamp obj/src/lib/core/chip_buildconfig.stamp obj/src/ble/ble_config_header.stamp obj/src/ble/ble_buildconfig.stamp obj/src/platform/platform_buildconfig.stamp obj/src/system/system_config_header.stamp obj/src/system/system_buildconfig.stamp obj/src/platform/logging/headers.stamp obj/third_party/nlassert/nlassert.stamp obj/third_party/nlio/nlio.stamp obj/src/inet/inet_config_header.stamp obj/src/inet/inet_buildconfig.stamp

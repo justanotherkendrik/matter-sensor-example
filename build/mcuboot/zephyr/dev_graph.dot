@@ -1,0 +1,8 @@
+// /home/kendrik/ncs/nrf/samples/matter/sensor/build/mcuboot/zephyr/zephyr_pre0.elf
+digraph "Device dependency graph" {
+	74 [label="clock@40000000\nOrdinal: 74 | Handle: 1\n/soc/clock@40000000"]
+	105 [label="gpio@50000300\nOrdinal: 105 | Handle: 2\n/soc/gpio@50000300"]
+	11 [label="gpio@50000000\nOrdinal: 11 | Handle: 3\n/soc/gpio@50000000"]
+	120 [label="flash-controller@4001e000\nOrdinal: 120 | Handle: 4\n/soc/flash-controller@4001e000"]
+	129 [label="mx25r6435f@0\nOrdinal: 129 | Handle: 5\n/soc/qspi@40029000/mx25r6435f@0"]
+}

@@ -1,0 +1,7 @@
+defines = -DNDEBUG
+framework_dirs =
+include_dirs =
+target_output_name = enforce_format
+
+
+build obj/src/lib/support/enforce_format.stamp: stamp

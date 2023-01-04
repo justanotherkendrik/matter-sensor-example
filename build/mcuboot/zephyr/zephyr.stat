@@ -1,0 +1,69 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x1399
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          768644 (bytes into file)
+  Flags:                             0x5000400, Version5 EABI, hard-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         4
+  Size of section headers:           40 (bytes)
+  Number of section headers:         27
+  Section header string table index: 26
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] rom_start         PROGBITS        00000000 0000c0 000100 00 WAX  0   0  4
+  [ 2] text              PROGBITS        00000100 0001c0 0066cc 00  AX  0   0  4
+  [ 3] initlevel         PROGBITS        000067cc 00688c 000048 00   A  0   0  4
+  [ 4] devices           PROGBITS        00006814 0068d4 000078 00   A  0   0  4
+  [ 5] sw_isr_table      PROGBITS        0000688c 00694c 000180 00  WA  0   0  4
+  [ 6] device_handles    PROGBITS        00006a0c 006acc 00001e 00   A  0   0  2
+  [ 7] rodata            PROGBITS        00006a30 006af0 0004ac 00   A  0   0 16
+  [ 8] .ramfunc          PROGBITS        20000000 00709e 000000 00   W  0   0  1
+  [ 9] datas             PROGBITS        20000000 006f9c 0000f4 00  WA  0   0  4
+  [10] device_states     PROGBITS        200000f4 007090 00000a 00  WA  0   0  1
+  [11] bss               NOBITS          20000100 0070c0 0016fa 00  WA  0   0  8
+  [12] noinit            NOBITS          20001800 0070c0 003080 00  WA  0   0 64
+  [13] .comment          PROGBITS        00000000 00709e 0000bf 01  MS  0   0  1
+  [14] .debug_aranges    PROGBITS        00000000 007160 001490 00      0   0  8
+  [15] .debug_info       PROGBITS        00000000 0085f0 0561c3 00      0   0  1
+  [16] .debug_abbrev     PROGBITS        00000000 05e7b3 00b546 00      0   0  1
+  [17] .debug_line       PROGBITS        00000000 069cf9 0182ea 00      0   0  1
+  [18] .debug_frame      PROGBITS        00000000 081fe4 002c80 00      0   0  4
+  [19] .debug_str        PROGBITS        00000000 084c64 00bcc3 01  MS  0   0  1
+  [20] .debug_loc        PROGBITS        00000000 090927 019602 00      0   0  1
+  [21] .debug_ranges     PROGBITS        00000000 0a9f30 003f00 00      0   0  8
+  [22] .ARM.attributes   ARM_ATTRIBUTES  00000000 0ade30 000034 00      0   0  1
+  [23] .last_section     PROGBITS        00006fda 00709a 000004 00   A  0   0  1
+  [24] .symtab           SYMTAB          00000000 0ade64 0073a0 10     25 981  4
+  [25] .strtab           STRTAB          00000000 0b5204 00676a 00      0   0  1
+  [26] .shstrtab         STRTAB          00000000 0bb96e 000114 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x0000c0 0x00000000 0x00000000 0x06edc 0x06edc RWE 0x10
+  LOAD           0x006f9c 0x20000000 0x00006edc 0x000fe 0x000fe RW  0x4
+  LOAD           0x00709a 0x00006fda 0x00006fda 0x00004 0x00004 R   0x1
+  LOAD           0x000000 0x20000100 0x20000100 0x00000 0x04780 RW  0x40
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     rom_start text initlevel devices sw_isr_table device_handles rodata 
+   01     datas device_states 
+   02     .last_section 
+   03     bss noinit 

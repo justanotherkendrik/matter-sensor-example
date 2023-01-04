@@ -1,0 +1,8 @@
+defines = -DNDEBUG -DCHIP_HAVE_CONFIG_H=1
+framework_dirs =
+include_dirs = -I../../../../../../../modules/lib/matter/src/include -I../../../../../../../modules/lib/matter/src -Igen/include -I../../../../../../../modules/lib/matter/zzz_generated/app-common
+target_output_name = chip_config_header
+
+build obj/src/lib/core/chip_config_header.inputdeps.stamp: stamp obj/src/ble/gen_ble_buildconfig.stamp obj/src/lib/core/gen_chip_buildconfig.stamp obj/src/platform/gen_platform_buildconfig.stamp obj/src/system/gen_system_buildconfig.stamp
+
+build obj/src/lib/core/chip_config_header.stamp: stamp || obj/src/lib/core/chip_buildconfig.stamp obj/src/ble/ble_config_header.stamp obj/src/system/system_config_header.stamp obj/src/ble/ble_buildconfig.stamp obj/src/platform/platform_buildconfig.stamp obj/src/system/system_buildconfig.stamp
